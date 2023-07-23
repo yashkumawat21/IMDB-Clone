@@ -1,0 +1,286 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Ubuntu',sans-serif;
+    background-color: #0e0c0c;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.header {
+    height: 27vh;
+    
+    background-size: cover;
+    background-color: #060606;
+    background-blend-mode: multiply;
+    font-weight: bolder;
+}
+
+.topcontainer {
+    width: 50%;
+    padding: 20px 0px;
+    color: white;
+    margin: 0px auto;
+   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.topcontainer h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Ubuntu',sans-serif;
+    margin-left: 200px;
+}
+
+
+
+
+.search-box {
+    width: 50%;
+    margin: 0px auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 1px 2px #a1a1a1;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box input {
+    margin: 0px;
+    width: 90%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.search-box button {
+    margin: 0px;
+    width: 9%;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* Main Container */
+.main {
+    background-color: #a62c2c;
+    padding: 40px;
+    min-height: 63vh;
+    
+}
+
+#totalstars{
+
+    width: 100px;
+
+    height: 30px;
+    border-radius: 5px;
+   
+
+}
+.movie-container {
+    width: 50%;
+    background-color:rgb(35, 35, 35);
+    color: #d4cece;
+    padding: 20px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 1px 2px #a1a1a1;
+}
+
+
+
+.detmovie {
+    width: 100%;
+    padding: 0px 10px 0px 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.detailsboxhead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+.listdetails {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* Favourite Items Container */
+.detailsbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.eachitem {
+    box-shadow: 1px 2px #a1a1a1;
+    margin: 0px 5px 25px 5px;
+    width: 15%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.eachitem a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.movieimg img {
+    width: 60%;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.moviecontent-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 0px;
+}
+
+.movietitle {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 0rem;
+}
+
+
+
+.pagination{
+    display:flex;
+    margin:10px 30px;
+    align-items: center;
+    justify-content: center;
+    color:rgb(16, 16, 16);
+}
+
+.page{
+    padding:20px;
+    cursor:pointer;
+}
+
+.page.disabled{
+    cursor:not-allowed;
+    color:grey;
+}
+
+.current{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.ratingmovie {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.ratemoviebox{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.ratemoviebox h3{
+    margin-right: 10px;
+}
+#commentbox{
+    width: 400px;
+    height: 100px;
+    align-items: baseline;
+    padding: 5px;
+    margin-left: auto;
+    font-size: 20px;
+    margin-right: auto;
+    border-radius:4px ;
+    border: #555;
+}
+
+#submitrating {
+    margin-top: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius:4px ;
+    border: #555;
+    box-shadow: 1px skyblue solid;
+    cursor:pointer;
+
+}
+
+.plotbox{
+
+    margin-top: 10px;
+    color: #a62c2c;
+
+
+}
+
+
+
+
+  
+  .stars a {
+    opacity: 30%;
+    padding: 5px;
+  }
+  
+  .stars:hover a {
+    opacity: 100%;
+    cursor: pointer;
+  }
+  
+  .stars a:hover ~ a {
+    opacity: 20%;
+  }
+
+  .stars a.active{
+    opacity: 100%;
+  }
